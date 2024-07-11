@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "localshell"
+version = "0.1.0"
+description = ""
+authors = ["Ben Bridts"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+boto3 = "^1.33.2"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+localshell = 'localshell.main:run'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
